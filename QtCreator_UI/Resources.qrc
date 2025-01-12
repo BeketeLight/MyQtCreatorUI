@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file>side_bar/assets/align-left.png</file>
+        <file>side_bar/assets/bug.png</file>
+        <file>side_bar/assets/extension.png</file>
+        <file>side_bar/assets/help.png</file>
+        <file>side_bar/assets/home.png</file>
+        <file>side_bar/assets/pen-tool.png</file>
+        <file>side_bar/assets/spanner.png</file>
+        <file>windows/assets/pngegg.png</file>
+        <file>windows/assets/down-right (copy).png</file>
+        <file>windows/assets/down-right (another copy).png</file>
+        <file>windows/assets/down-right.png</file>
+    </qresource>
+</RCC>
