@@ -42,26 +42,36 @@ Rectangle{
             id: design
             text: "Design"
             source: "qrc:/side_bar/assets/pen-tool.png"
+            windowUrl: "design_window/DesignWindow.qml"
+            onActivated: root.activated(windowUrl)
         }
         SideBarMenu{
             id:debug
             text: "Debug"
             source: "qrc:/side_bar/assets/bug.png"
+            windowUrl: "debug_window/DebugWindow.qml"
+            onActivated: root.activated(windowUrl)
         }
         SideBarMenu{
             id: projects
             text: "Projects"
             source: "qrc:/side_bar/assets/spanner.png"
+            windowUrl: "projects_window/ProjectsWindow.qml"
+            onActivated: root.activated(windowUrl)
         }
         SideBarMenu{
             id: extensions
             text: "Extensions"
             source: "qrc:/side_bar/assets/extension.png"
+            windowUrl: "extensions_window/ExtensionsWindow.qml"
+            onActivated: root.activated(windowUrl)
         }
         SideBarMenu{
             id:help
             text: "Help"
             source: "qrc:/side_bar/assets/help.png"
+            windowUrl: "help_window/HelpWindow.qml"
+            onActivated: root.activated(windowUrl)
         }
 
     }

@@ -28,6 +28,11 @@ qt_add_qml_module(appQtCreator_UI
         QML_FILES welcome_windows/CustomButton.qml
         QML_FILES welcome_windows/Explore.qml
         QML_FILES edit_window/EditWindow.qml
+        QML_FILES design_window/DesignWindow.qml
+        QML_FILES debug_window/DebugWindow.qml
+        QML_FILES projects_window/ProjectsWindow.qml
+        QML_FILES extensions_window/ExtensionsWindow.qml
+        QML_FILES help_window/HelpWindow.qml
 
 )
 

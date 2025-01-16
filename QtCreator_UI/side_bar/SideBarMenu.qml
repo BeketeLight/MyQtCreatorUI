@@ -18,6 +18,8 @@ Rectangle {
     signal activated
 
 
+
+
     Rectangle{
         id: container
         // signal activated
