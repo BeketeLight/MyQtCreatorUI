@@ -27,7 +27,7 @@ Rectangle{
             id: welcome
             text: "Welcome"
             source: "qrc:/side_bar/assets/home.png"
-            windowUrl: "windows/Welcome.qml"
+            windowUrl: "welcome_windows/Welcome.qml"
             onActivated: root.activated(windowUrl)
 
         }
@@ -35,7 +35,7 @@ Rectangle{
             id:edit
             text: "Edit"
             source: "qrc:/side_bar/assets/align-left.png"
-            windowUrl: "windows/Edit.qml"
+            windowUrl: "edit_window/EditWindow.qml"
             onActivated: root.activated(windowUrl)
         }
         SideBarMenu{

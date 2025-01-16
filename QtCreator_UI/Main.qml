@@ -1,9 +1,10 @@
 import QtQuick
 import QtQuick.Controls
 import "side_bar"
-import "windows"
+import "welcome_windows"
 
 ApplicationWindow {
+    id: rootOne
     width: 1300
     height: 1000
     visible: true
@@ -67,35 +68,59 @@ ApplicationWindow {
         }
     }
 
-    footer: TabBar{
-        //contentHeight: 1
-        id: bar
-        // width: parent.width
-        TextInput{
-            text: "wjjjjjj"
+    footer: Item {
+        height: 20
+        width: parent.width
+        anchors{
+            left: parent.left
+            leftMargin: sideMenuBar.width
         }
-        TabButton {
-            text: qsTr("Issues")
-        }
-        TabButton {
-            text: qsTr("Search Results")
+        Row{
+            anchors.fill: parent
+            spacing: 3
+
+            Image {
+                id: hideWindow
+                source: "qrc:/assets/hide.png"
+                height: 20
+                width: height
+                fillMode: Image.PreserveAspectFit
+            }
+            TextField{
+                placeholderText: "Type to locate"
+                placeholderTextColor: "gray"
+            }
+            TabBar{
+                //contentHeight: 1
+                id: bar
+                // width: parent.width
+                spacing: 10
+                TabButton {
+                    text: qsTr("Issues")
+                    width: text.width + 10
+                }
+                TabButton {
+                    text: qsTr("Search Results")
+                }
+
+                TabButton {
+                    text: qsTr("Application Output")
+                }
+                TabButton {
+                    text: qsTr("Compile Output")
+                }
+                TabButton {
+                    text: qsTr("Terminal")
+                }
+                TabButton {
+                    text: qsTr("Version Control")
+                }
+                TabButton {
+                    text: qsTr("General Messages")
+                }
+            }
         }
 
-        TabButton {
-            text: qsTr("Application Output")
-        }
-        TabButton {
-            text: qsTr("Compile Output")
-        }
-        TabButton {
-            text: qsTr("Terminal")
-        }
-        TabButton {
-            text: qsTr("Version Control")
-        }
-        TabButton {
-            text: qsTr("General Messages")
-        }
     }
 
     SideBar{
@@ -113,7 +138,7 @@ ApplicationWindow {
         id: main
         //color: "red"
 
-       // height: 600
+        // height: 600
 
 
 

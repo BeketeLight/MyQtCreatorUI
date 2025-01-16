@@ -23,11 +23,11 @@ qt_add_qml_module(appQtCreator_UI
         QML_FILES side_bar/SideBar.qml
         QML_FILES side_bar/SideBarMenu.qml
         QML_FILES side_bar/MenuObjectModel.qml
-        QML_FILES windows/Welcome.qml
-        QML_FILES windows/StartComponent.qml
-        QML_FILES windows/Edit.qml
-        QML_FILES windows/CustomButton.qml
-        QML_FILES windows/Explore.qml
+        QML_FILES welcome_windows/Welcome.qml
+        QML_FILES welcome_windows/StartComponent.qml
+        QML_FILES welcome_windows/CustomButton.qml
+        QML_FILES welcome_windows/Explore.qml
+        QML_FILES edit_window/EditWindow.qml
 
 )
 
